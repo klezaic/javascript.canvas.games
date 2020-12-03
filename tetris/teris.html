@@ -1,0 +1,48 @@
+<html>
+<head>
+    <title>Teris</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="./script/tetris.js">
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="left_status_panel">
+            <canvas id="next_piece_canvas" height="120px" width="120px"></canvas>
+        </div>
+        <div class="center_status_panel">
+            <canvas id="main_screen_canvas" height="720px" width="300px"></canvas>
+        </div>
+        <div class="right_status_panel">
+            <div class="status_table">
+                <div>Score: <span id="score_value">0</span></div>
+                <div>Rows: <span id="rows_value">0</span></div>
+            </div>
+
+            <div class="command_centre">
+                <div>
+                    <button class="command_centre_button" id="restart_button">Restart</button>
+                </div>
+                <div>
+                    <button class="command_centre_button" id="pause_button">Pause</button>
+                </div>
+            </div>
+            <div class="user_input_centre_upper">
+                <p>Tick duration: <span id="current_speed"></span> ms</p>
+                <input type="range" id="game_speed_slider" min="20" max="1000">
+            </div>
+            <div class="user_input_centre_middle">
+                <button class="command_centre_half_button" id="left_button"><</button>
+                <button class="command_centre_half_button" id="down_button">&or;</button>
+                <button class="command_centre_half_button" id="right_button">></button>
+            </div>
+            <div class="user_input_centre_bottom">
+                <button class="command_centre_full_button" id="up_button">Rotate</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    init("main_screen");
+</script>
+</html>

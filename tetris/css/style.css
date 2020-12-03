@@ -1,0 +1,130 @@
+body {
+    width: 100%;
+    background: black;
+    display: flex;
+    justify-content: center;
+}
+.container {
+    margin-top: 20px;
+    width: 800px;
+    display: flex;
+    overflow: hidden;
+}
+
+.left_status_panel {
+    width: 120px;
+    height: 120px;
+    display: inline-block;
+    border: 1px solid lawngreen;
+    background: black;
+}
+
+.center_status_panel {
+    width: 300px;
+    height: 720px;
+    margin-left: 50px;
+    display: inline-block;
+    border: 1px solid lawngreen;
+    background: black;
+}
+
+.right_status_panel {
+    width: 200px;
+    height: 600px;
+    margin-left: 50px;
+    display: inline-block;
+    border: 1px solid lawngreen;
+    background: black;
+    color: lawngreen;
+
+    position:relative;
+}
+
+.status_table {
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: large;
+}
+
+.command_centre {
+    position: absolute;
+    left: 25px;
+    bottom: 400px;
+    justify-content: center;
+}
+
+.command_centre_button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 100%;
+    background: black;
+    color: lawngreen;
+}
+.command_centre_button.active {
+    background: lawngreen;
+    color: black;
+}
+.command_centre_button:focus {
+    /* Removes OS Focus behaviour*/
+    outline: none;
+}
+
+.user_input_centre_upper {
+    position: absolute;
+    left: 30px;
+    bottom: 300px;
+}
+
+
+.user_input_centre_middle {
+     position: absolute;
+     left: 6px;
+     bottom: 100px;
+ }
+
+
+.user_input_centre_bottom {
+    position: absolute;
+    left: 6px;
+    bottom: 12px;
+}
+
+.command_centre_half_button {
+    margin-left: 6px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: black;
+    color: lawngreen;
+    font-size: large;
+}
+.command_centre_half_button.active {
+    background: lawngreen;
+    color: black;
+}
+.command_centre_half_button:focus {
+    /* Removes OS Focus behaviour*/
+    outline: none;
+}
+
+.command_centre_full_button {
+    margin-left: 6px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 60px;
+    padding-right: 60px;
+    background: black;
+    color: lawngreen;
+    font-size: large;
+}
+.command_centre_full_button.active {
+    background: lawngreen;
+    color: black;
+}
+.command_centre_full_button:focus {
+    /* Removes OS Focus behaviour*/
+    outline: none;
+}
